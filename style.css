@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #121212; /* Cor de fundo mais escura */
+    color: #fff; /* Cor do texto em branco */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Fonte moderna e elegante */
+  }
+  
+  .container {
+    background: #1f1f1f;
+    padding: 4rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
+  
+  .special {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .form-control {
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+  }
+  
+  .form-control input {
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #444;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #fff;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .form-control input:focus,
+  .form-control input:valid {
+    outline: 0;
+    border-bottom-color: #ff416c;
+  }
+  
+  .form-control label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    pointer-events: none;
+    color: #fff;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .form-control input:focus + label,
+  .form-control input:valid + label {
+    color: #ff416c;
+    transform: translateY(-30px);
+  }
+  
+  .btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background: #ff416c;
+    padding: 15px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn:focus {
+    outline: 0;
+  }
+  
+  .btn:active {
+    transform: scale(0.98);
+  }
+  
+  .author {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+  }
+  
+  .author span {
+    color: #ff416c;
+    font-weight: 600;
+  }
+  
